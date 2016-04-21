@@ -12,7 +12,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     @Bind(R.id.viewEateries) TextView mViewEateries;
-
+    @Bind(R.id.aboutTextView) TextView mAboutTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +20,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         mViewEateries.setOnClickListener(this);
+        mAboutTextView.setOnClickListener(this);
 
 
         Typeface myCustomFont = Typeface.createFromAsset(getAssets(), "fonts/bebasneue.ttf");
         mViewEateries.setTypeface(myCustomFont);
+        mAboutTextView.setTypeface(myCustomFont);
 
     }
 
@@ -31,6 +33,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if (v == mViewEateries) {
             Intent intent = new Intent(MainActivity.this, EateriesActivity.class);
+            startActivity(intent);
+        } if (v == mAboutTextView) {
+            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
             startActivity(intent);
         }
     }
