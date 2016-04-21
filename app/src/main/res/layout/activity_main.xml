@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/mainBackground"
+        android:src="@drawable/mainbackground"
         android:scaleType="centerCrop"
         android:layout_alignParentBottom="true"
         android:tint="#4b41260a" />
@@ -38,9 +38,9 @@
         android:layout_below="@+id/mainLogo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="131dp"
-        android:capitalize="words"
         android:textColor="@color/colorText"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textSize="35sp" />
 
 
 </RelativeLayout>

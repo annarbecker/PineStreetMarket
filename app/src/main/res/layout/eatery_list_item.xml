@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:id="@+id/eateryLogoImageView"
+        android:src="@drawable/waffles"
+        android:scaleType="centerInside"
+        android:padding="18dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eateryNameTextView"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Eatery Name"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brief Description"
+            android:id="@+id/eateryDescriptionTextView"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+</LinearLayout>
